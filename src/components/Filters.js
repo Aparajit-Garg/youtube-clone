@@ -1,23 +1,24 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 
-const Filters = ({ showSideBar }) => {
+const Filters = ({ showSideBar, selectedFilter, setSelectedFilter }) => {
 
-    const [selectedFilter, setSelectedFilter] = useState('All')
+    // const [selectedFilter, setSelectedFilter] = useState('All')
     const tags = ['All', 'Akshay Saini', 'Mixes', 'Dramedy', 'Bollywood Music', 'CSS', 'React', 'Computer programming',
                   'Body building', 'Live', 'Chandler Bing', 'Podcasts', 'Laptops', 'Game shows', 'Gadgets', 'INDIA',
                 'Tourist destinations', 'Bombay Silk Store', 'Bajrangbali']
     
+    useEffect(() => {}, [selectedFilter])
     
     return (
-        <div className='fixed top-[80px] pl-4 w-full bg-black overflow-x-scroll scroll flex flex-nowrap gap-4 items-center h-16 whitespace-nowrap scroll-smooth no-scrollbar'
-            style={{marginLeft: showSideBar ? '240px' : '70px'}}
+        <div className='fixed top-[80px] pl-4 bg-black overflow-x-scroll scroll flex flex-nowrap gap-4 items-center h-16 whitespace-nowrap scroll-smooth no-scrollbar'
+            style={{marginLeft: showSideBar ? '240px' : '70px', width: '100vw'}}
         >
             {
-                tags.map(item => {
+                tags.map((item, index) => {
                     return (
-                        <span className='bg-slate-50 px-4 py-2 rounded-md cursor-pointer flex' onClick={() => setSelectedFilter(item)}
+                        <span key={index} className='bg-slate-50 px-4 py-2 rounded-md cursor-pointer flex' onClick={() => setSelectedFilter(item)}
                             style={{
                                 backgroundColor: selectedFilter === item ? 'rgba(255, 255, 255, 0.5)': 'rgb(248, 250, 252)',
                                 color: selectedFilter === item ? '#fff' : '#000'}}>

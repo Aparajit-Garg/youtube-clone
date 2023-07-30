@@ -11,7 +11,7 @@ const App = () => {
     console.log(showSideBar)
 
     return (
-        <div className='bg-black'>
+        <div className='bg-black w-full h-full'>
             <Header setShowSideBar={setShowSideBar}/>
             <div class='flex h-full'>
                 <SideBar showSideBar={showSideBar}/>
