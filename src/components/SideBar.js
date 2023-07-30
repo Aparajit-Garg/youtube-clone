@@ -26,133 +26,156 @@ import AlbumIcon from '@mui/icons-material/Album';
 import ChildCareIcon from '@mui/icons-material/ChildCare';
 import CopyrightIcon from '@mui/icons-material/Copyright';
 
-const SideBar = ({}) => {
+const SideBar = ({ showSideBar }) => {
 
-    return (
-        <div class='w-50 bg-white border-white border-solid flex flex-col justify-start gap-2 px-2'>
-            <span class='p-4 mt-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <HomeIcon class='h-6' />
-                <span class='p-0.5'> Home </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <SlowMotionVideoIcon class='h-6' />
-                <span class='p-0.5'> Shorts </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 pb-2 border-b-2 cursor-pointer'>
-                <SubscriptionsIcon class='h-6' />
-                <span class='p-0.5'> Subscriptions </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <VideoLibraryIcon class='h-6' />
-                <span class='p-0.5'> Library </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <HistoryIcon class='h-6' />
-                <span class='p-0.5'> History </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <SlideshowIcon class='h-6' />
-                <span class='p-0.5'> Your Videos </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <WatchLaterIcon class='h-6' />
-                <span class='p-0.5'> Watch Later </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <DownloadForOfflineIcon class='h-6' />
-                <span class='p-0.5'> Downloads </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <ThumbUpIcon class='h-6' />
-                <span class='p-0.5'> Liked Videos </span>
-            </span>
-            <span class='px-2 flex gap-1 h-9 pt-2 border-t-2 justify-start'>
-                Subscriptions
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <PersonOutlineIcon class='h-6' />
-                <span> Akshay Saini</span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <PersonOutlineIcon class='h-6' />
-                <span> Tejas Kumar </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <PersonOutlineIcon class='h-6' />
-                <span> Web dev simplified</span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <PersonOutlineIcon class='h-6' />
-                <span> GreatStack </span>
-            </span>
-            <span class='px-2 pt-2 border-t-2 gap-1 h-9 flex cursor-pointer'>
-                Explore
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <WhatshotIcon class='h-6' />
-                <span> Trending </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <AddShoppingCartIcon class='h-6' />
-                <span> Shopping </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <MusicNoteIcon class='h-6' />
-                <span> Music </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <TheatersIcon class='h-6' />
-                <span> Films </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <StreamIcon class='h-6' />
-                <span> Live </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <SportsEsportsIcon class='h-6' />
-                <span> Gaming </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <NewspaperIcon class='h-6' />
-                <span> News </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <EmojiEventsIcon class='h-6' />
-                <span> Sport </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <LocalLibraryIcon class='h-6' />
-                <span> Learning </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <CheckroomIcon class='h-6' />
-                <span> Fashion & Beauty </span>
-            </span>
-            <span class='px-2 flex gap-1 items-center h-9 pt-2 border-t-2'>
-                More from YouTube
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <YouTubeIcon class='h-6' />
-                <span> YouTube Premium </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <LibraryMusicIcon class='h-6' />
-                <span> YouTube Music </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <AlbumIcon class='h-6' />
-                <span> YouTube Studio </span>
-            </span>
-            <span class='px-4 flex gap-1 items-center h-9 cursor-pointer'>
-                <ChildCareIcon class='h-6' />
-                <span> YouTube Kids </span>
-            </span>
-            <span class='px-2 flex gap-1 items-center h-9'>
-                <CopyrightIcon class='h-6' />
-                <span class='font-light text-sm'> 2023 Aparajit Garg </span>
-            </span>
-        </div>
-    )
+    // if (!showSideBar)
+    //     return <></>
+
+    if (showSideBar) {
+
+        return (
+            <div className= 'h-full fixed left-0 top-20 bg-black flex flex-col justify-start \
+                         gap-2 px-2 overflow-y-scroll scroll scroll-smooth'
+                         style={{ width: showSideBar ? '240px' : '70px', transition: '0.2s'}}>
+                <span className='px-4 mt-2 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <HomeIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Home </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <SlowMotionVideoIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Shorts </span>
+                </span>
+                <span className='px-4 flex gap-4 items-center h-9 py-2 cursor-pointer hover:bg-black/[0.1]'>
+                    <SubscriptionsIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Subscriptions </span>
+                </span>
+                <span className='py-1 border-b-2'></span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <VideoLibraryIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Library </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <HistoryIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> History </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <SlideshowIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Your Videos </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <WatchLaterIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Watch Later </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <DownloadForOfflineIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Downloads </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <ThumbUpIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Liked Videos </span>
+                </span>
+                <span className='px-2 flex gap-1 h-9 pt-2 border-t-2 justify-start text-white'>
+                    Subscriptions
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <PersonOutlineIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Akshay Saini</span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <PersonOutlineIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Tejas Kumar </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <PersonOutlineIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Web dev simplified</span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <PersonOutlineIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> GreatStack </span>
+                </span>
+                <span className='px-2 pt-2 border-t-2 gap-1 h-9 flex text-white'>
+                    Explore
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <WhatshotIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Trending </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <AddShoppingCartIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Shopping </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <MusicNoteIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Music </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <TheatersIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Films </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <StreamIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Live </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <SportsEsportsIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Gaming </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <NewspaperIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> News </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <EmojiEventsIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Sport </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <LocalLibraryIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Learning </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <CheckroomIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> Fashion & Beauty </span>
+                </span>
+                <span className='px-2 flex gap-4 py-2 items-center h-9 pt-2 border-t-2 text-white'>
+                    More from YouTube
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <YouTubeIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> YouTube Premium </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <LibraryMusicIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> YouTube Music </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <AlbumIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> YouTube Studio </span>
+                </span>
+                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                    <ChildCareIcon class='h-6 fill-white' />
+                    <span className='p-0.5 text-white'> YouTube Kids </span>
+                </span>
+                <span className='px-2 flex gap-4 py-2 items-center h-9'>
+                    <CopyrightIcon class='h-6 fill-white' />
+                    <span className='font-light text-sm text-white'> 2023 Aparajit Garg </span>
+                </span>
+            </div>
+        )
+    }
+    else {
+        return (
+            <aside className='h-full bg-black flex flex-col justify-start \
+            gap-6 px-2 mt-[80px] pt-4 overflow-y-scroll scroll scroll-smooth no-scrollbar hover:overflow-y-scroll'
+            style={{ width: showSideBar ? '240px' : '70px', transition: '0.2s'}}>
+                <HomeIcon class='h-10 hover cursor-pointer hover:bg-white/[0.2] p-2 fill-white' />
+                <SlowMotionVideoIcon class='h-10 cursor-pointer hover:bg-white/[0.2] p-2 fill-white' />
+                <SubscriptionsIcon class='h-10 cursor-pointer hover:bg-white/[0.2] p-2 fill-white' />
+                <VideoLibraryIcon class='h-10 cursor-pointer hover:bg-white/[0.2] p-2 fill-white' />
+                <DownloadForOfflineIcon class='h-10 cursor-pointer hover:bg-white/[0.2] p-2 fill-white' />
+            </aside>
+        )
+    }
+
 }
 
 export default SideBar
