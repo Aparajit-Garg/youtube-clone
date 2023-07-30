@@ -164,7 +164,7 @@ const SideBar = ({ showSideBar }) => {
     }
     else {
         return (
-            <aside className='h-full bg-black flex flex-col justify-start \
+            <aside className='h-full fixed top-0 left-0 bg-black flex flex-col justify-start \
             gap-6 px-2 mt-[80px] pt-4 overflow-y-scroll scroll scroll-smooth no-scrollbar hover:overflow-y-scroll'
             style={{ width: showSideBar ? '240px' : '70px', transition: '0.2s'}}>
                 <HomeIcon class='h-10 hover cursor-pointer hover:bg-white/[0.2] p-2 fill-white' />

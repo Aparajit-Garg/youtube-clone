@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './App.css'
 import Header from './src/components/Header'
 import SideBar from './src/components/SideBar'
-// import Body from './src/components/Body'
+import Body from './src/components/Body'
 
 const App = () => {
     const [showSideBar, setShowSideBar] = useState(true)
@@ -15,7 +15,7 @@ const App = () => {
             <Header setShowSideBar={setShowSideBar}/>
             <div class='flex h-full'>
                 <SideBar showSideBar={showSideBar}/>
-                {/* <Body /> */}
+                <Body showSideBar={showSideBar}/>
 
             </div>
         </div>
