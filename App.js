@@ -13,7 +13,7 @@ const App = () => {
     return (
         <div className='bg-black'>
             <Header setShowSideBar={setShowSideBar}/>
-            <div class='flex'>
+            <div class='flex h-full'>
                 <SideBar showSideBar={showSideBar}/>
                 {/* <Body /> */}
 

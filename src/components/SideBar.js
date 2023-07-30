@@ -34,128 +34,128 @@ const SideBar = ({ showSideBar }) => {
     if (showSideBar) {
 
         return (
-            <div className= 'h-full fixed left-0 top-20 bg-black flex flex-col justify-start \
-                         gap-2 px-2 overflow-y-scroll scroll scroll-smooth'
+            <div className= 'fixed left-0 top-0 mt-20 bg-black flex flex-col justify-start \
+                         gap-2 px-2 overflow-y-scroll scroll-smooth h-full'
                          style={{ width: showSideBar ? '240px' : '70px', transition: '0.2s'}}>
-                <span className='px-4 mt-2 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 mt-2 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <HomeIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Home </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <SlowMotionVideoIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Shorts </span>
                 </span>
-                <span className='px-4 flex gap-4 items-center h-9 py-2 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 items-center py-2 cursor-pointer hover:bg-white/[0.3]'>
                     <SubscriptionsIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Subscriptions </span>
                 </span>
                 <span className='py-1 border-b-2'></span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <VideoLibraryIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Library </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <HistoryIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> History </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <SlideshowIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Your Videos </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <WatchLaterIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Watch Later </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <DownloadForOfflineIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Downloads </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <ThumbUpIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Liked Videos </span>
                 </span>
                 <span className='px-2 flex gap-1 h-9 pt-2 border-t-2 justify-start text-white'>
                     Subscriptions
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <PersonOutlineIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Akshay Saini</span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <PersonOutlineIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Tejas Kumar </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <PersonOutlineIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Web dev simplified</span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <PersonOutlineIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> GreatStack </span>
                 </span>
-                <span className='px-2 pt-2 border-t-2 gap-1 h-9 flex text-white'>
+                <span className='px-2 pt-2 border-t-2 gap-1 flex text-white'>
                     Explore
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <WhatshotIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Trending </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <AddShoppingCartIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Shopping </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <MusicNoteIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Music </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <TheatersIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Films </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <StreamIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Live </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <SportsEsportsIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Gaming </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <NewspaperIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> News </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <EmojiEventsIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Sport </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <LocalLibraryIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Learning </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <CheckroomIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> Fashion & Beauty </span>
                 </span>
-                <span className='px-2 flex gap-4 py-2 items-center h-9 pt-2 border-t-2 text-white'>
+                <span className='px-2 flex gap-4 py-2 items-center pt-2 border-t-2 text-white'>
                     More from YouTube
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <YouTubeIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> YouTube Premium </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <LibraryMusicIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> YouTube Music </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <AlbumIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> YouTube Studio </span>
                 </span>
-                <span className='px-4 flex gap-4 py-2 items-center h-9 cursor-pointer hover:bg-black/[0.1]'>
+                <span className='px-4 flex gap-4 py-2 items-center cursor-pointer hover:bg-white/[0.3]'>
                     <ChildCareIcon class='h-6 fill-white' />
                     <span className='p-0.5 text-white'> YouTube Kids </span>
                 </span>
-                <span className='px-2 flex gap-4 py-2 items-center h-9'>
+                <span className='px-2 flex gap-4 py-2 items-center'>
                     <CopyrightIcon class='h-6 fill-white' />
                     <span className='font-light text-sm text-white'> 2023 Aparajit Garg </span>
                 </span>
