@@ -14,7 +14,7 @@ const Body = ({ showSideBar }) => {
         //     </div>
 
         // </div>
-        <div className='bg-black' style={{height: '100vh'}}>
+        <div className='bg-black'>
             <Filters showSideBar={showSideBar} selectedFilter={selectedFilter} setSelectedFilter={setSelectedFilter} />
             <VideoContainer selectedFilter={selectedFilter} showSideBar={showSideBar} />
         </div>
