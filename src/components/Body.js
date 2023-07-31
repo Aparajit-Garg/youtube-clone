@@ -1,10 +1,12 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import Filters from './Filters'
 import KeyboardArrowLeftIcon from '@mui/icons-material/KeyboardArrowLeft';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import VideoContainer from './VideoContainer';
+import { valuesContext } from '../context';
 
-const Body = ({ showSideBar }) => {
+const Body = () => {
+    const [showSideBar, setShowSideBar] = useContext(valuesContext)
     const [selectedFilter, setSelectedFilter] = useState('All')
 
     return (
@@ -16,7 +18,7 @@ const Body = ({ showSideBar }) => {
         // </div>
         <div className='bg-black'>
             <Filters showSideBar={showSideBar} selectedFilter={selectedFilter} setSelectedFilter={setSelectedFilter} />
-            <VideoContainer selectedFilter={selectedFilter} showSideBar={showSideBar} />
+            <VideoContainer selectedFilter={selectedFilter} />
         </div>
     )
 }

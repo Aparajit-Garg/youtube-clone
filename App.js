@@ -4,6 +4,8 @@ import './App.css'
 import Header from './src/components/Header'
 import SideBar from './src/components/SideBar'
 import Body from './src/components/Body'
+import YoutubeContext from './src/context'
+import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
 
 const App = () => {
     const [showSideBar, setShowSideBar] = useState(true)
@@ -11,16 +13,31 @@ const App = () => {
     console.log(showSideBar)
 
     return (
-        <div className='bg-black w-full h-full'>
-            <Header setShowSideBar={setShowSideBar}/>
-            <div class='flex h-full'>
-                <SideBar showSideBar={showSideBar}/>
-                <Body showSideBar={showSideBar}/>
-
+        <YoutubeContext>
+            <div className='bg-black w-full h-full'>
+                <Header/>
+                <div class='flex h-full'>
+                    <SideBar/>
+                    {/* <Body showSideBar={showSideBar}/> */}
+                    <Outlet />
+                </div>
             </div>
-        </div>
+        </YoutubeContext>
     )
 }
 
+const appRouter = createBrowserRouter([
+    {
+        path: '/',
+        element: <App />,
+        children: [
+            {
+                path: '/',
+                element: <Body />
+            }
+        ]
+    }
+])
 
-ReactDOM.createRoot(document.getElementById("root")).render(<App />)
+
+ReactDOM.createRoot(document.getElementById("root")).render(<RouterProvider router={appRouter} />)

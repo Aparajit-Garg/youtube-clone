@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import MenuIcon from '@mui/icons-material/Menu'
 import SearchIcon from '@mui/icons-material/Search'
 import YouTubeIcon from '@mui/icons-material/YouTube'
@@ -7,8 +7,10 @@ import MicIcon from '@mui/icons-material/Mic'
 import VideoIcon from '@mui/icons-material/VideoCall'
 import NotificationsNoneIcon from '@mui/icons-material/NotificationsNone'
 import Person2Icon from '@mui/icons-material/Person2'
+import { valuesContext } from '../context'
 
-const Header = ({ setShowSideBar }) => {
+const Header = () => {
+    const [showSideBar, setShowSideBar] = useContext(valuesContext)
     // return (
     //     <header>
     //         <div class='flex p-4 px-4 pe-10 justify-between align-middle fixed'>

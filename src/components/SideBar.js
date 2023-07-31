@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import HomeIcon from '@mui/icons-material/Home'
 import SlowMotionVideoIcon from '@mui/icons-material/SlowMotionVideo';
 import SubscriptionsIcon from '@mui/icons-material/Subscriptions';
@@ -25,11 +25,14 @@ import LibraryMusicIcon from '@mui/icons-material/LibraryMusic';
 import AlbumIcon from '@mui/icons-material/Album';
 import ChildCareIcon from '@mui/icons-material/ChildCare';
 import CopyrightIcon from '@mui/icons-material/Copyright';
+import { valuesContext } from '../context';
 
-const SideBar = ({ showSideBar }) => {
+const SideBar = () => {
 
     // if (!showSideBar)
     //     return <></>
+    const [showSideBar,] = useContext(valuesContext)
+    console.log('context: ', showSideBar)
 
     if (showSideBar) {
 
