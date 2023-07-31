@@ -39,8 +39,8 @@ const Header = () => {
                 <YouTubeIcon class='cursor-pointer p-1 bg-black fill-white' />
             </div>
             <div className='middle w-[36rem] flex align-middle p-5'>
-                <input className="border-[1px] border-[#d3d3d3] outline-none rounded-l-full px-4 w-[30rem] focus:border-[#065fd4] focus:outline-none" type="text" placeholder='Search'/>
-                <SearchIcon class="border-[0.2px] p-1 rounded-r-full px-3 cursor-pointer fill-white"/>
+                <input className="border-2 border-white/[0.3] text-white rounded-l-full px-4 w-[30rem] bg-black focus:outline-none" type="text" placeholder='Search'/>
+                <SearchIcon class="border-2 border-l-0 border-white/[0.3] p-1 rounded-r-full px-3 cursor-pointer fill-white"/>
                 <MicIcon class='cursor-pointer fill-white p-1 ml-4 hover:bg-slate-600 rounded-full' />
             </div>
             <div className='flex gap-4 py-5 align-middle pr-4'>

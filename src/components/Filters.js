@@ -5,15 +5,15 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 const Filters = ({ showSideBar, selectedFilter, setSelectedFilter }) => {
 
     // const [selectedFilter, setSelectedFilter] = useState('All')
-    const tags = ['All', 'Akshay Saini', 'Mixes', 'Dramedy', 'Bollywood Music', 'CSS', 'React', 'Computer programming',
-                  'Body building', 'Live', 'Chandler Bing', 'Podcasts', 'Laptops', 'Game shows', 'Gadgets', 'INDIA',
+    const tags = ['All', 'Akshay Saini', 'React router', 'Redux', 'Redux toolkit', 'CSS', 'React', 'Computer programming',
+                  'Table tennis', 'Context API', 'Chandler Bing', 'Podcasts', 'Laptops', 'Game shows', 'Gadgets', 'INDIA',
                 'Tourist destinations', 'Bombay Silk Store', 'Bajrangbali']
     
     useEffect(() => {}, [selectedFilter])
     
     return (
         <div className='fixed top-[80px] pl-4 bg-black overflow-x-scroll scroll flex flex-nowrap gap-4 items-center h-16 whitespace-nowrap scroll-smooth no-scrollbar z-10'
-            style={{marginLeft: showSideBar ? '240px' : '70px', width: '100vw'}}
+            style={{marginLeft: showSideBar ? '280px' : '70px', width: '100vw'}}
         >
             {
                 tags.map((item, index) => {
