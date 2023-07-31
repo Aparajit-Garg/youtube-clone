@@ -6,6 +6,7 @@ import SideBar from './src/components/SideBar'
 import Body from './src/components/Body'
 import YoutubeContext from './src/context'
 import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom'
+import WatchVideo from './src/components/WatchVideo'
 
 const App = () => {
     const [showSideBar, setShowSideBar] = useState(true)
@@ -34,6 +35,10 @@ const appRouter = createBrowserRouter([
             {
                 path: '/',
                 element: <Body />
+            },
+            {
+                path: '/watch/:id',
+                element: <WatchVideo />
             }
         ]
     }

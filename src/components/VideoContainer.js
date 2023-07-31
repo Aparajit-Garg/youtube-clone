@@ -17,24 +17,51 @@ const VideoContainer = ({ selectedFilter }) => {
     }, [selectedFilter])
 
     const fetchPlaylistVideos = async () => {
-        const response = await fetch(process.env.REACT_APP_PLAYLIST_AKSHAY + process.env.REACT_APP_YOUTUBE_API_KEY)
-        const data = await response.json()
-        console.log('playlist data: ', data)
-        setPlaylistVideos([...data?.items])
+        try {
+            const response = await fetch(process.env.REACT_APP_PLAYLIST_AKSHAY + process.env.REACT_APP_YOUTUBE_API_KEY)
+            const data = await response.json()
+            console.log('playlist data: ', data)
+            if (data?.error) {
+                alert('Youtube api issue please try after sometime')
+            }
+            else {
+                setPlaylistVideos([...data?.items])
+            }
+        } catch(error) {
+            alert('Error: ', error.message)
+        }
     }
 
     const fetchShorts = async () => {
-        const response = await fetch(process.env.REACT_APP_SHORTS_URL)
-        const data = await response.json()
-        console.log('shorts data: ', data.items[0].shorts)
-        setShorts([...data?.items[0]?.shorts])
+        try {
+            const response = await fetch(process.env.REACT_APP_SHORTS_URL)
+            const data = await response.json()
+            console.log('shorts data: ', data.items[0].shorts)
+            if (data?.error) {
+                alert('Youtube api issue please try after sometime')
+            }
+            else {
+                setShorts([...data?.items[0]?.shorts])
+            }
+        } catch(error) {
+            alert('Error: ', error.message)
+        }
     }
 
     const fetchTejasVideos = async () => {
-        const response = await fetch(process.env.REACT_APP_PLAYLIST_TEJAS)
-        const data = await response.json()
-        console.log('tejas videos: ', data)
-        setTejasVideos([...data?.items])
+        try {
+            const response = await fetch(process.env.REACT_APP_PLAYLIST_TEJAS)
+            const data = await response.json()
+            console.log('tejas videos: ', data)
+            if (data?.error) {
+                alert('Youtube api issue please try after sometime')
+            }
+            else {
+                setTejasVideos([...data?.items])
+            }
+        } catch(error) {
+            alert('Error: ', error.message)
+        }
     }
 
     useEffect(() => {
@@ -46,7 +73,7 @@ const VideoContainer = ({ selectedFilter }) => {
     if (playlistVideos.length === 0 || shorts.length === 0) {
         console.log('hi there')
         return (
-            <div className='mt-[200px] bg-black' style={{marginLeft: showSideBar ? '280px' : '45px'}}>
+            <div className='mt-[200px] w-full h-[100vh] bg-black' style={{marginLeft: showSideBar ? '290px' : '75px'}}>
                 <div class="flex p-4 items-center justify-center rounded-full bg-gradient-to-tr from-indigo-500 to-pink-500 animate-bounce">Loading...</div>
             </div>
         );

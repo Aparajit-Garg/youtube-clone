@@ -167,14 +167,29 @@ const SideBar = () => {
     }
     else {
         return (
-            <aside className='h-full fixed top-0 left-0 bg-black flex flex-col justify-start \
-            gap-6 px-2 mt-[80px] pt-4 overflow-y-scroll scroll scroll-smooth no-scrollbar hover:overflow-y-scroll'
+            <aside className='h-full px-2 fixed top-0 left-0 bg-black flex flex-col justify-start \
+            gap-6 mt-[80px] pt-4 overflow-y-scroll scroll scroll-smooth no-scrollbar hover:overflow-y-scroll'
             style={{ width: showSideBar ? '240px' : '70px', transition: '0.2s'}}>
-                <HomeIcon class='h-10 hover cursor-pointer hover:bg-white/[0.2] p-2 fill-white' />
-                <SlowMotionVideoIcon class='h-10 cursor-pointer hover:bg-white/[0.2] p-2 fill-white' />
-                <SubscriptionsIcon class='h-10 cursor-pointer hover:bg-white/[0.2] p-2 fill-white' />
-                <VideoLibraryIcon class='h-10 cursor-pointer hover:bg-white/[0.2] p-2 fill-white' />
-                <DownloadForOfflineIcon class='h-10 cursor-pointer hover:bg-white/[0.2] p-2 fill-white' />
+                <span>
+                    <HomeIcon class='h-10 hover cursor-pointer hover:bg-white/[0.2] p-2 fill-white' />
+                    <span class='text-white text-sm'> Home </span>
+                </span>
+                <span>
+                    <SlowMotionVideoIcon class='h-10 cursor-pointer hover:bg-white/[0.2] p-2 fill-white' />
+                    <span className='text-white text-sm'> Shorts </span>
+                </span>
+                <span>
+                    <TheatersIcon class='px-2 h-10 cursor-pointer hover:bg-white/[0.2] p-2 fill-white' />
+                    <span className='text-white text-sm w-full'> Films </span>
+                </span>
+                <span>
+                    <VideoLibraryIcon class='h-10 cursor-pointer hover:bg-white/[0.2] p-2 fill-white' />
+                    <span className='text-white text-sm'> Library </span>
+                </span>
+                <span>
+                    <DownloadForOfflineIcon class='h-10 cursor-pointer hover:bg-white/[0.2] p-2 fill-white' />
+                    <span className='text-white text-sm'> History </span>
+                </span>
             </aside>
         )
     }
